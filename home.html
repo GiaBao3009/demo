@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Homepage - Welcome</title>
+    <title>TechHub - Innovation & Excellence</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Ant Design CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/antd@5.11.5/dist/reset.css" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-gradient-animated"></div>
+        <div class="grid-pattern"></div>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <i class="fas fa-rocket"></i> BrandName
+                <i class="fas fa-cube"></i>TechHub
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -41,7 +44,7 @@
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                        <a class="nav-link" href="#testimonials">Reviews</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -53,55 +56,121 @@
 
     <!-- Hero Section -->
     <section class="hero-section" id="home">
-        <div class="particles">
-            <div class="particle" style="width: 10px; height: 10px; top: 20%; left: 10%;"></div>
-            <div class="particle" style="width: 15px; height: 15px; top: 40%; left: 80%; animation-delay: 2s;"></div>
-            <div class="particle" style="width: 8px; height: 8px; top: 60%; left: 20%; animation-delay: 4s;"></div>
-            <div class="particle" style="width: 12px; height: 12px; top: 80%; left: 70%; animation-delay: 6s;"></div>
-            <div class="particle" style="width: 20px; height: 20px; top: 30%; left: 50%; animation-delay: 3s;"></div>
-        </div>
+        <div class="floating-element float-1"></div>
+        <div class="floating-element float-2"></div>
+        
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Welcome to the Future</h1>
-                <p class="hero-subtitle">Create amazing experiences with modern design and cutting-edge technology</p>
+                <div class="hero-badge">
+                    <i class="fas fa-rocket"></i> Launching Innovation 2024
+                </div>
+                <h1 class="hero-title">
+                    Build The Future<br/>
+                    <span class="gradient-text">With Technology</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Transform your ideas into reality with cutting-edge solutions. 
+                    We deliver excellence in every project.
+                </p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary-custom">Get Started</button>
-                    <button class="btn btn-outline-custom">Learn More</button>
+                    <button class="btn-modern btn-primary-modern">
+                        Get Started <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-modern btn-outline-modern">
+                        <i class="fas fa-play-circle"></i> Watch Demo
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features-section scroll-animation" id="features">
+    <section class="features-section scroll-fade" id="features">
         <div class="container">
-            <h2 class="section-title">Amazing Features</h2>
+            <div class="section-header">
+                <div class="section-badge">Our Features</div>
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">
+                    Powerful features designed to help you succeed in the digital world
+                </p>
+            </div>
+
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-bolt"></i>
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-rocket feature-icon"></i>
                         </div>
                         <h3 class="feature-title">Lightning Fast</h3>
-                        <p class="feature-description">Experience blazing fast performance with optimized code and modern architecture.</p>
+                        <p class="feature-description">
+                            Optimized performance with cutting-edge technology. 
+                            Experience blazing fast load times and seamless interactions.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-lg-4 col-md-6">
                     <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-shield-alt"></i>
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-shield-alt feature-icon"></i>
                         </div>
-                        <h3 class="feature-title">Secure & Safe</h3>
-                        <p class="feature-description">Your data is protected with enterprise-grade security and encryption.</p>
+                        <h3 class="feature-title">Enterprise Security</h3>
+                        <p class="feature-description">
+                            Bank-grade encryption and security protocols. 
+                            Your data is protected with the highest industry standards.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-lg-4 col-md-6">
                     <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-mobile-alt"></i>
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-mobile-alt feature-icon"></i>
                         </div>
                         <h3 class="feature-title">Fully Responsive</h3>
-                        <p class="feature-description">Perfect experience on any device - desktop, tablet, or mobile.</p>
+                        <p class="feature-description">
+                            Perfect experience across all devices. 
+                            From desktop to mobile, your content looks amazing everywhere.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-brain feature-icon"></i>
+                        </div>
+                        <h3 class="feature-title">AI-Powered</h3>
+                        <p class="feature-description">
+                            Intelligent automation and smart insights. 
+                            Leverage artificial intelligence to make better decisions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-chart-line feature-icon"></i>
+                        </div>
+                        <h3 class="feature-title">Real-time Analytics</h3>
+                        <p class="feature-description">
+                            Track performance with live data and insights. 
+                            Make data-driven decisions with comprehensive analytics.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-users feature-icon"></i>
+                        </div>
+                        <h3 class="feature-title">Team Collaboration</h3>
+                        <p class="feature-description">
+                            Work together seamlessly with your team. 
+                            Built-in collaboration tools for maximum productivity.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -109,31 +178,46 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="stats-section scroll-animation">
+    <section class="stats-section scroll-fade">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="stat-item">
-                        <span class="stat-number"><i class="fas fa-users"></i> 10K+</span>
-                        <span class="stat-label">Happy Clients</span>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number" data-target="15000">0</div>
+                        <div class="stat-label">Active Users</div>
                     </div>
                 </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="stat-item">
-                        <span class="stat-number"><i class="fas fa-project-diagram"></i> 500+</span>
-                        <span class="stat-label">Projects Done</span>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-number" data-target="850">0</div>
+                        <div class="stat-label">Projects Completed</div>
                     </div>
                 </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="stat-item">
-                        <span class="stat-number"><i class="fas fa-award"></i> 50+</span>
-                        <span class="stat-label">Awards Won</span>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-number" data-target="120">0</div>
+                        <div class="stat-label">Awards Won</div>
                     </div>
                 </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="stat-item">
-                        <span class="stat-number"><i class="fas fa-clock"></i> 24/7</span>
-                        <span class="stat-label">Support</span>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="stat-number" data-target="45">0</div>
+                        <div class="stat-label">Countries Served</div>
                     </div>
                 </div>
             </div>
@@ -141,35 +225,92 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services-section scroll-animation" id="services">
+    <section class="services-section scroll-fade" id="services">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
+            <div class="section-header">
+                <div class="section-badge">What We Do</div>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">
+                    Comprehensive solutions tailored to your business needs
+                </p>
+            </div>
+
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
+                        <div class="service-number">01</div>
                         <h3 class="service-title">Web Development</h3>
-                        <p class="feature-description">Build modern, responsive websites with cutting-edge technologies.</p>
+                        <p class="service-description">
+                            Create stunning, high-performance websites with modern frameworks and best practices.
+                        </p>
+                        <a href="#" class="service-link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-lg-4 col-md-6">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
+                        <div class="service-number">02</div>
+                        <h3 class="service-title">Mobile Apps</h3>
+                        <p class="service-description">
+                            Native and cross-platform mobile applications that deliver exceptional user experiences.
+                        </p>
+                        <a href="#" class="service-link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-number">03</div>
+                        <h3 class="service-title">Cloud Solutions</h3>
+                        <p class="service-description">
+                            Scalable cloud infrastructure and deployment strategies for your growing business.
+                        </p>
+                        <a href="#" class="service-link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-number">04</div>
                         <h3 class="service-title">UI/UX Design</h3>
-                        <p class="feature-description">Create beautiful and intuitive user interfaces and experiences.</p>
+                        <p class="service-description">
+                            Beautiful, intuitive interfaces that users love. Design thinking at its finest.
+                        </p>
+                        <a href="#" class="service-link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-lg-4 col-md-6">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
+                        <div class="service-number">05</div>
                         <h3 class="service-title">Digital Marketing</h3>
-                        <p class="feature-description">Grow your business with effective digital marketing strategies.</p>
+                        <p class="service-description">
+                            Data-driven marketing strategies that grow your brand and increase conversions.
+                        </p>
+                        <a href="#" class="service-link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-number">06</div>
+                        <h3 class="service-title">Consulting</h3>
+                        <p class="service-description">
+                            Expert guidance and strategic planning to help your business achieve its goals.
+                        </p>
+                        <a href="#" class="service-link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -177,42 +318,78 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials-section scroll-animation" id="testimonials">
+    <section class="testimonials-section scroll-fade" id="testimonials">
         <div class="container">
-            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="section-header">
+                <div class="section-badge">Testimonials</div>
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-subtitle">
+                    Don't just take our word for it - hear from our satisfied clients
+                </p>
+            </div>
+
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="testimonial-card">
-                        <p class="testimonial-text">"Amazing service! They transformed our vision into reality. Highly recommended for anyone looking for quality work."</p>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Outstanding work! They transformed our vision into reality and exceeded all expectations. The attention to detail and commitment to quality is unmatched."
+                        </p>
                         <div class="testimonial-author">
                             <div class="author-avatar">JD</div>
-                            <div class="author-info">
-                                <h5>John Doe</h5>
-                                <p>CEO, TechCorp</p>
+                            <div>
+                                <div class="author-name">John Davidson</div>
+                                <div class="author-role">CEO, TechCorp</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-lg-4 col-md-6">
                     <div class="testimonial-card">
-                        <p class="testimonial-text">"Professional team with exceptional skills. They delivered beyond our expectations and within the timeline."</p>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Professional team with exceptional skills. They delivered our project on time and within budget. Highly recommend for any serious development work."
+                        </p>
                         <div class="testimonial-author">
-                            <div class="author-avatar">SS</div>
-                            <div class="author-info">
-                                <h5>Sarah Smith</h5>
-                                <p>Marketing Director</p>
+                            <div class="author-avatar">SM</div>
+                            <div>
+                                <div class="author-name">Sarah Mitchell</div>
+                                <div class="author-role">Product Manager, InnovateLabs</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-lg-4 col-md-6">
                     <div class="testimonial-card">
-                        <p class="testimonial-text">"Outstanding results! Their attention to detail and commitment to excellence is unmatched in the industry."</p>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Incredible experience from start to finish. Their technical expertise and creative approach helped us launch a product that our users absolutely love."
+                        </p>
                         <div class="testimonial-author">
-                            <div class="author-avatar">MJ</div>
-                            <div class="author-info">
-                                <h5>Mike Johnson</h5>
-                                <p>Founder, StartupXYZ</p>
+                            <div class="author-avatar">MC</div>
+                            <div>
+                                <div class="author-name">Michael Chen</div>
+                                <div class="author-role">Founder, StartupXYZ</div>
                             </div>
                         </div>
                     </div>
@@ -222,13 +399,21 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section scroll-animation" id="contact">
+    <section class="cta-section scroll-fade" id="contact">
         <div class="container">
-            <h2 class="cta-title">Ready to Get Started?</h2>
-            <p class="cta-subtitle">Join thousands of satisfied customers and take your business to the next level</p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary-custom pulse">Start Your Journey</button>
-                <button class="btn btn-outline-custom">Contact Us</button>
+            <div class="cta-box">
+                <h2 class="cta-title">Ready to Get Started?</h2>
+                <p class="cta-subtitle">
+                    Join thousands of companies already using our platform to achieve their goals
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-modern btn-primary-modern">
+                        Start Free Trial <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-modern btn-outline-modern">
+                        <i class="fas fa-phone-alt"></i> Contact Sales
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -237,86 +422,92 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h4 class="footer-title">
-                        <i class="fas fa-rocket"></i> BrandName
-                    </h4>
-                    <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.8;">
-                        Creating amazing digital experiences for businesses worldwide. Let's build something great together.
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <i class="fas fa-cube"></i> TechHub
+                    </div>
+                    <p class="footer-description">
+                        Building the future with innovative technology solutions. 
+                        We help businesses transform digitally and achieve their goals.
                     </p>
-                    <div class="social-icons mt-4">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-2 mb-4">
+
+                <div class="col-lg-2 col-md-4 mb-4">
                     <h5 class="footer-title">Company</h5>
                     <ul class="footer-links">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Press Kit</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2 mb-4">
-                    <h5 class="footer-title">Services</h5>
+
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Resources</h5>
                     <ul class="footer-links">
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Development</a></li>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">Consulting</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Community</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2 mb-4">
+
+                <div class="col-lg-2 col-md-4 mb-4">
                     <h5 class="footer-title">Support</h5>
                     <ul class="footer-links">
                         <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Status</a></li>
                         <li><a href="#">FAQ</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2 mb-4">
+
+                <div class="col-lg-2 col-md-4 mb-4">
                     <h5 class="footer-title">Legal</h5>
                     <ul class="footer-links">
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Security</a></li>
-                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Licenses</a></li>
                     </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 BrandName. All rights reserved. Made with <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+                <p>&copy; 2024 TechHub. All rights reserved. Crafted with <i class="fas fa-heart" style="color: #0EA5E9;"></i> by our team</p>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script>
-        // Scroll Animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.scroll-animation').forEach(el => {
-            observer.observe(el);
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
         });
 
-        // Smooth Scroll
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -330,47 +521,48 @@
             });
         });
 
-        // Navbar background on scroll
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-                navbar.style.boxShadow = '0 5px 30px rgba(0, 0, 0, 0.15)';
-            } else {
-                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-            }
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-fade').forEach(el => {
+            observer.observe(el);
         });
 
-        // Counter Animation for Stats
-        function animateCounter(element, target, duration) {
-            let start = 0;
-            const increment = target / (duration / 16);
+        // Counter animation
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+
             const timer = setInterval(() => {
-                start += increment;
-                if (start >= target) {
-                    element.textContent = target + '+';
+                current += step;
+                if (current >= target) {
+                    element.textContent = target.toLocaleString() + '+';
                     clearInterval(timer);
                 } else {
-                    element.textContent = Math.floor(start) + '+';
+                    element.textContent = Math.floor(current).toLocaleString();
                 }
             }, 16);
         }
 
-        // Trigger counter animation when stats section is visible
+        // Trigger counters when stats section is visible
         const statsObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    const numbers = entry.target.querySelectorAll('.stat-number');
-                    numbers.forEach((num, index) => {
-                        const targets = [10000, 500, 50, 24];
-                        setTimeout(() => {
-                            const text = num.textContent;
-                            if (index < 3) {
-                                animateCounter(num, targets[index], 2000);
-                            }
-                        }, index * 200);
-                    });
+                    const counters = entry.target.querySelectorAll('.stat-number');
+                    counters.forEach(counter => animateCounter(counter));
                     statsObserver.unobserve(entry.target);
                 }
             });
@@ -380,6 +572,16 @@
         if (statsSection) {
             statsObserver.observe(statsSection);
         }
+
+        // Mobile menu close on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarCollapse.classList.remove('show');
+                }
+            });
+        });
     </script>
 </body>
 </html>
