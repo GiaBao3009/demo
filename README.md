@@ -1,1 +1,13 @@
-"# Demo Nhom" 
+minhhuygbx-rgb - Đỗ Trần Minh Huy
+
+NguyenKhacThuong - Nguyễn Khắc Thượng
+
+renboy-gaming - Đặng Xuân Toàn
+
+thanhzicne - Phạm Đức Thành
+
+vanlong2206 - Lại Văn Long
+
+Vinhdev04 - Phạm Công Vinh
+
+GiaBao3009 - Nguyễn Đức Gia Bảo
