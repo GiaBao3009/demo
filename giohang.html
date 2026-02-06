@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Demo Nhóm</title>
+    <style>
+        /* PHẦN CSS: Giao diện Xanh Dương Hiện Đại */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f5; /* Nền xám xanh nhẹ */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0056b3; /* Tiêu đề màu xanh đậm */
+            border-bottom: 2px solid #eef2f5;
+            padding-bottom: 20px;
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Bảng danh sách sản phẩm */
+        table {
+            width: 100%;
+            border-collapse: separate; /* Tách viền để bo tròn */
+            border-spacing: 0 10px; /* Khoảng cách giữa các dòng */
+            margin-bottom: 20px;
+        }
+
+        th {
+            background-color: #007bff; /* Header bảng màu xanh tươi */
+            color: white;
+            text-align: left;
+            padding: 15px;
+            font-weight: 600;
+        }
+        
+        /* Bo tròn góc cho header bảng */
+        th:first-child { border-top-left-radius: 8px; }
+        th:last-child { border-top-right-radius: 8px; }
+
+        td {
+            padding: 15px;
+            background-color: #fff;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            vertical-align: middle;
+        }
+
+        /* Cột sản phẩm */
+        .product-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .product-info img {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+            border: 1px solid #eee;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .product-info strong {
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        /* Nút xóa */
+        .btn-remove {
+            color: #ff6b6b;
+            background-color: #fff0f0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            border: 1px solid #ffcccc;
+            transition: 0.3s;
+        }
+
+        .btn-remove:hover {
+            background-color: #ffcccc;
+            color: #d63031;
+        }
+
+        /* Ô nhập số lượng */
+        input[type="number"] {
+            width: 60px;
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Phần tổng tiền */
+        .cart-summary {
+            text-align: right;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
+        }
+
+        .total-price {
+            font-size: 28px;
+            font-weight: 800;
+            color: #0056b3; /* Giá tiền màu xanh đồng bộ */
+            margin-left: 10px;
+        }
+
+        .btn-checkout {
+            background: linear-gradient(45deg, #007bff, #0056b3); /* Nút gradient */
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px; /* Nút bo tròn */
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0, 86, 179, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .btn-checkout:hover {
+            transform: translateY(-2px); /* Hiệu ứng nổi lên khi di chuột */
+            box-shadow: 0 6px 20px rgba(0, 86, 179, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Giỏ Hàng Của Bạn</h1>
+
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th style="width: 45%;">Sản phẩm</th>
+                    <th style="width: 15%;">Đơn giá</th>
+                    <th style="width: 15%;">Số lượng</th>
+                    <th style="width: 15%;">Thành tiền</th>
+                    <th style="width: 10%;">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <img src="https://placehold.co/100x100/png?text=Iphone" alt="Sản phẩm 1">
+                            <div>
+                                <strong>iPhone 15 Pro Max</strong><br>
+                                <small>Màu: Titan Tự Nhiên</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price">30000000</td>
+                    <td>
+                        <input type="number" value="1" min="1" onchange="updateCart()">
+                    </td>
+                    <td class="subtotal">30.000.000đ</td>
+                    <td><button class="btn-remove" onclick="removeItem(this)">Xóa</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <img src="https://placehold.co/100x100/png?text=AirPod" alt="Sản phẩm 2">
+                            <div>
+                                <strong>AirPods Pro 2</strong><br>
+                                <small>Loại: MagSafe</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price">5000000</td>
+                    <td>
+                        <input type="number" value="2" min="1" onchange="updateCart()">
+                    </td>
+                    <td class="subtotal">10.000.000đ</td>
+                    <td><button class="btn-remove" onclick="removeItem(this)">Xóa</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <p>Tổng cộng: <span id="total-amount" class="total-price">40.000.000đ</span></p>
+            <button class="btn-checkout">Tiến hành thanh toán</button>
+        </div>
+    </div>
+
+    <script>
+        // PHẦN JS: Xử lý tính toán tiền
+        function formatMoney(amount) {
+            return amount.toLocaleString('vi-VN') + 'đ';
+        }
+
+        function updateCart() {
+            let total = 0;
+            const rows = document.querySelectorAll('#cart-table tbody tr');
+
+            rows.forEach(row => {
+                const price = parseFloat(row.querySelector('.price').innerText);
+                const quantity = row.querySelector('input[type="number"]').value;
+                const subtotal = price * quantity;
+                
+                // Cập nhật thành tiền của từng dòng
+                row.querySelector('.subtotal').innerText = formatMoney(subtotal);
+                
+                // Cộng vào tổng tiền
+                total += subtotal;
+            });
+
+            // Cập nhật tổng tiền cuối cùng
+            document.getElementById('total-amount').innerText = formatMoney(total);
+        }
+
+        function removeItem(button) {
+            // Xóa dòng chứa nút bấm
+            const row = button.closest('tr');
+            row.remove();
+            // Tính lại tiền sau khi xóa
+            updateCart();
+        }
+
+        // Chạy tính toán lần đầu khi tải trang
+        updateCart();
+    </script>
+</body>
+</html>
