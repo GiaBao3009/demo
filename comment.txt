@@ -1,0 +1,4 @@
+Chuc nang Comment
+
+- Them binh luan cho san pham
+- Hien thi danh sach binh luan
