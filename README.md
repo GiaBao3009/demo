@@ -2,7 +2,7 @@ minhhuygbx-rgb - Đỗ Trần Minh Huy
 
 NguyenKhacThuong - Nguyễn Khắc Thượng
 
-renboy-gaming - Đặng Xuân Toàn
+DangXuanToan-Ren - Đặng Xuân Toàn
 
 thanhzicne - Phạm Đức Thành
 
